@@ -190,7 +190,6 @@
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Component id="txtJunta" min="-2" pref="952" max="-2" attributes="0"/>
                                                       <Component id="txtExpediente" min="-2" pref="174" max="-2" attributes="0"/>
-                                                      <Component id="dateChooserAudienciaInicial" alignment="0" min="-2" pref="174" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <Component id="btnInsertarDatosGenerales" alignment="0" min="-2" pref="408" max="-2" attributes="0"/>
@@ -268,10 +267,7 @@
                                   <Component id="txtExpediente" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="lblAudienciaInicial" pref="35" max="32767" attributes="0"/>
-                                  <Component id="dateChooserAudienciaInicial" max="32767" attributes="0"/>
-                              </Group>
+                              <Component id="lblAudienciaInicial" min="-2" pref="35" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                               <Component id="lblDatosConflicto" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -491,8 +487,6 @@
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel()"/>
                       </AuxValues>
-                    </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserAudienciaInicial">
                     </Component>
                     <Component class="javax.swing.JButton" name="btnInsertarDatosGenerales">
                       <Properties>
@@ -932,40 +926,37 @@
                                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                                           <Component id="jScrollPane13" max="32767" attributes="0"/>
                                       </Group>
-                                      <Component id="lblNotasControl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblGastos" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblHonorarios" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="lblDespachoRemitidor" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                                                  <Group type="102" alignment="0" attributes="0">
-                                                      <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="lblFechaIngreso" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="lblFechaControlAdministrativo" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="lblFechaControlDocumental" alignment="0" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                                  </Group>
-                                                  <Group type="102" alignment="1" attributes="0">
-                                                      <Component id="lblFechaRecepcionGestion" min="-2" pref="161" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
+                                              <Component id="lblNotasControl" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblGastos" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblHonorarios" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="lblDespachoRemitidor" alignment="0" min="-2" max="-2" attributes="0"/>
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="lblNumConsecutivo" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                                  <Component id="lblFechaIngreso" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="lblFechaControlAdministrativo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="lblFechaControlDocumental" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                                                          </Group>
+                                                          <Group type="102" alignment="1" attributes="0">
+                                                              <Component id="lblFechaRecepcionGestion" min="-2" pref="161" max="-2" attributes="0"/>
+                                                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <Component id="lblNumConsecutivo" min="-2" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Component id="txtNumConsecutivo" min="-2" pref="148" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="dateChooserFechaRecepcionGestion" alignment="0" min="-2" pref="214" max="-2" attributes="0"/>
-                                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="txtNumConsecutivo" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="dateChooserFechaIngreso" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="dateChooserFechaControlAdministrativo" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="dateChooserFechaControlDocumental" alignment="0" pref="148" max="32767" attributes="0"/>
-                                              </Group>
-                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -1019,38 +1010,22 @@
                               <Component id="lblNotasControl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jScrollPane14" min="-2" pref="400" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="lblFechaIngreso" alignment="1" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="dateChooserFechaIngreso" alignment="1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                              <Component id="lblFechaControlAdministrativo" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Component id="dateChooserFechaControlAdministrativo" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="lblFechaControlDocumental" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="dateChooserFechaControlDocumental" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="lblFechaIngreso" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="lblFechaControlAdministrativo" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="lblFechaControlDocumental" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="lblNumConsecutivo" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtNumConsecutivo" alignment="3" min="-2" pref="39" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="lblFechaRecepcionGestion" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="dateChooserFechaRecepcionGestion" alignment="1" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                              <Component id="lblFechaRecepcionGestion" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                               <Component id="btnInsertarControles" min="-2" pref="54" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="54" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1182,12 +1157,6 @@
                         <Property name="text" type="java.lang.String" value="Fecha Control Documental: "/>
                       </Properties>
                     </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserFechaIngreso">
-                    </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserFechaControlAdministrativo">
-                    </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserFechaControlDocumental">
-                    </Component>
                     <Component class="javax.swing.JLabel" name="lblNumConsecutivo">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="N&#xfa;mero Consecutivo: "/>
@@ -1199,8 +1168,6 @@
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Fecha (Recibido para Gesti&#xf3;n): "/>
                       </Properties>
-                    </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserFechaRecepcionGestion">
                     </Component>
                     <Component class="javax.swing.JComboBox" name="comboAsigandoA">
                       <Properties>
@@ -1296,18 +1263,10 @@
                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
                                       <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
-                                      <Group type="102" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="lblFechaEntrega" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblFechaRemision" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="lblFechaElaboracion" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                              <Component id="dateChooserFechaEntrega" alignment="0" min="-2" pref="179" max="-2" attributes="0"/>
-                                              <Component id="dateChooserFechaRemision" alignment="1" min="-2" pref="179" max="-2" attributes="0"/>
-                                              <Component id="dateChooserFechaElaboracion" alignment="1" min="-2" pref="179" max="-2" attributes="0"/>
-                                          </Group>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblFechaEntrega" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblFechaRemision" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblFechaElaboracion" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
@@ -1323,26 +1282,13 @@
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-                                      <Component id="lblFechaElaboracion" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                                      <Component id="lblFechaRemision" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-                                      <Component id="lblFechaEntrega" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="dateChooserFechaElaboracion" min="-2" pref="39" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="dateChooserFechaRemision" min="-2" pref="39" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="dateChooserFechaEntrega" min="-2" pref="39" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                              <Component id="lblFechaElaboracion" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                              <Component id="lblFechaRemision" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                              <Component id="lblFechaEntrega" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
@@ -1367,8 +1313,6 @@
                         <Property name="text" type="java.lang.String" value="Fecha de Elaboraci&#xf3;n: "/>
                       </Properties>
                     </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserFechaElaboracion">
-                    </Component>
                     <Component class="javax.swing.JLabel" name="lblFechaRemision">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1377,8 +1321,6 @@
                         <Property name="text" type="java.lang.String" value="Fecha de Remisi&#xf3;n: "/>
                       </Properties>
                     </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserFechaRemision">
-                    </Component>
                     <Component class="javax.swing.JLabel" name="lblFechaEntrega">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -1386,8 +1328,6 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="Fecha de Entrega: "/>
                       </Properties>
-                    </Component>
-                    <Component class="com.toedter.calendar.JDateChooser" name="dateChooserFechaEntrega">
                     </Component>
                     <Container class="javax.swing.JPanel" name="jPanel2">
                       <Properties>

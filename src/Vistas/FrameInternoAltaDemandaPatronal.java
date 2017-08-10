@@ -17,7 +17,7 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
     public FrameInternoAltaDemandaPatronal() {
         initComponents();
     }
-
+    //Hola
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -61,7 +61,6 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
         lblExpediente = new javax.swing.JLabel();
         txtExpediente = new javax.swing.JTextField();
         lblAudienciaInicial = new javax.swing.JLabel();
-        dateChooserAudienciaInicial = new com.toedter.calendar.JDateChooser();
         btnInsertarDatosGenerales = new javax.swing.JButton();
         panelAccPrestHech = new javax.swing.JPanel();
         scrollAccPrestHech = new javax.swing.JScrollPane();
@@ -110,13 +109,9 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
         lblFechaIngreso = new javax.swing.JLabel();
         lblFechaControlAdministrativo = new javax.swing.JLabel();
         lblFechaControlDocumental = new javax.swing.JLabel();
-        dateChooserFechaIngreso = new com.toedter.calendar.JDateChooser();
-        dateChooserFechaControlAdministrativo = new com.toedter.calendar.JDateChooser();
-        dateChooserFechaControlDocumental = new com.toedter.calendar.JDateChooser();
         lblNumConsecutivo = new javax.swing.JLabel();
         txtNumConsecutivo = new javax.swing.JTextField();
         lblFechaRecepcionGestion = new javax.swing.JLabel();
-        dateChooserFechaRecepcionGestion = new com.toedter.calendar.JDateChooser();
         comboAsigandoA = new javax.swing.JComboBox<>();
         jScrollPane16 = new javax.swing.JScrollPane();
         listaAsignadoA = new javax.swing.JList<>();
@@ -125,11 +120,8 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
         scrollBoletaEntElab = new javax.swing.JScrollPane();
         panelInternoBoletaElaboracionEntrega = new javax.swing.JPanel();
         lblFechaElaboracion = new javax.swing.JLabel();
-        dateChooserFechaElaboracion = new com.toedter.calendar.JDateChooser();
         lblFechaRemision = new javax.swing.JLabel();
-        dateChooserFechaRemision = new com.toedter.calendar.JDateChooser();
         lblFechaEntrega = new javax.swing.JLabel();
-        dateChooserFechaEntrega = new com.toedter.calendar.JDateChooser();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane17 = new javax.swing.JScrollPane();
         jList3 = new javax.swing.JList<>();
@@ -299,8 +291,7 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addGroup(panelInternoDatosGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(txtJunta, javax.swing.GroupLayout.PREFERRED_SIZE, 952, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtExpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(dateChooserAudienciaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(txtExpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addComponent(btnInsertarDatosGenerales, javax.swing.GroupLayout.PREFERRED_SIZE, 408, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(0, 80, Short.MAX_VALUE))
         );
@@ -358,9 +349,7 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
                     .addComponent(lblExpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtExpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(panelInternoDatosGeneralesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblAudienciaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                    .addComponent(dateChooserAudienciaInicial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(lblAudienciaInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
                 .addComponent(lblDatosConflicto)
                 .addGap(18, 18, 18)
@@ -719,32 +708,29 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
                                 .addComponent(lblDistribucionHonorarios))
                             .addGap(37, 37, 37)
                             .addComponent(jScrollPane13))
-                        .addComponent(lblNotasControl)
-                        .addComponent(lblGastos)
-                        .addComponent(lblHonorarios)
-                        .addComponent(lblDespachoRemitidor)
                         .addGroup(panelInternoControlesLayout.createSequentialGroup()
                             .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(panelInternoControlesLayout.createSequentialGroup()
-                                        .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(lblFechaIngreso)
-                                            .addComponent(lblFechaControlAdministrativo)
-                                            .addComponent(lblFechaControlDocumental))
-                                        .addGap(48, 48, 48))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelInternoControlesLayout.createSequentialGroup()
-                                        .addComponent(lblFechaRecepcionGestion, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(32, 32, 32)))
+                                .addComponent(lblNotasControl)
+                                .addComponent(lblGastos)
+                                .addComponent(lblHonorarios)
+                                .addComponent(lblDespachoRemitidor)
                                 .addGroup(panelInternoControlesLayout.createSequentialGroup()
-                                    .addComponent(lblNumConsecutivo)
-                                    .addGap(87, 87, 87)))
-                            .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(dateChooserFechaRecepcionGestion, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(txtNumConsecutivo, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(dateChooserFechaIngreso, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(dateChooserFechaControlAdministrativo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(dateChooserFechaControlDocumental, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE))))))
+                                    .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(panelInternoControlesLayout.createSequentialGroup()
+                                                .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(lblFechaIngreso)
+                                                    .addComponent(lblFechaControlAdministrativo)
+                                                    .addComponent(lblFechaControlDocumental))
+                                                .addGap(48, 48, 48))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelInternoControlesLayout.createSequentialGroup()
+                                                .addComponent(lblFechaRecepcionGestion, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(32, 32, 32)))
+                                        .addGroup(panelInternoControlesLayout.createSequentialGroup()
+                                            .addComponent(lblNumConsecutivo)
+                                            .addGap(87, 87, 87)))
+                                    .addComponent(txtNumConsecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))))
                 .addContainerGap(105, Short.MAX_VALUE))
         );
         panelInternoControlesLayout.setVerticalGroup(
@@ -787,31 +773,21 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
                 .addComponent(lblNotasControl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(40, 40, 40)
-                .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(panelInternoControlesLayout.createSequentialGroup()
-                        .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(panelInternoControlesLayout.createSequentialGroup()
-                                .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(lblFechaIngreso)
-                                    .addComponent(dateChooserFechaIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(50, 50, 50)
-                                .addComponent(lblFechaControlAdministrativo))
-                            .addComponent(dateChooserFechaControlAdministrativo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(50, 50, 50)
-                        .addComponent(lblFechaControlDocumental))
-                    .addComponent(dateChooserFechaControlDocumental, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(42, 42, 42)
+                .addComponent(lblFechaIngreso)
+                .addGap(50, 50, 50)
+                .addComponent(lblFechaControlAdministrativo)
+                .addGap(50, 50, 50)
+                .addComponent(lblFechaControlDocumental)
                 .addGap(46, 46, 46)
                 .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNumConsecutivo)
                     .addComponent(txtNumConsecutivo, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(panelInternoControlesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lblFechaRecepcionGestion)
-                    .addComponent(dateChooserFechaRecepcionGestion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addComponent(lblFechaRecepcionGestion)
                 .addGap(46, 46, 46)
                 .addComponent(btnInsertarControles, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         scrollControles.setViewportView(panelInternoControles);
@@ -914,16 +890,10 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
                     .addGroup(panelInternoBoletaElaboracionEntregaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(panelInternoBoletaElaboracionEntregaLayout.createSequentialGroup()
-                            .addGroup(panelInternoBoletaElaboracionEntregaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblFechaEntrega)
-                                .addComponent(lblFechaRemision)
-                                .addComponent(lblFechaElaboracion))
-                            .addGap(18, 18, 18)
-                            .addGroup(panelInternoBoletaElaboracionEntregaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(dateChooserFechaEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(dateChooserFechaRemision, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(dateChooserFechaElaboracion, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(panelInternoBoletaElaboracionEntregaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblFechaEntrega)
+                            .addComponent(lblFechaRemision)
+                            .addComponent(lblFechaElaboracion)))
                     .addGroup(panelInternoBoletaElaboracionEntregaLayout.createSequentialGroup()
                         .addComponent(lblNumeroExpediente)
                         .addGap(46, 46, 46)
@@ -933,23 +903,13 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
         panelInternoBoletaElaboracionEntregaLayout.setVerticalGroup(
             panelInternoBoletaElaboracionEntregaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelInternoBoletaElaboracionEntregaLayout.createSequentialGroup()
-                .addGroup(panelInternoBoletaElaboracionEntregaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelInternoBoletaElaboracionEntregaLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
-                        .addComponent(lblFechaElaboracion)
-                        .addGap(39, 39, 39)
-                        .addComponent(lblFechaRemision)
-                        .addGap(41, 41, 41)
-                        .addComponent(lblFechaEntrega)
-                        .addGap(47, 47, 47))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelInternoBoletaElaboracionEntregaLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(dateChooserFechaElaboracion, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(dateChooserFechaRemision, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(dateChooserFechaEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(28, 28, 28)))
+                .addGap(79, 79, 79)
+                .addComponent(lblFechaElaboracion)
+                .addGap(39, 39, 39)
+                .addComponent(lblFechaRemision)
+                .addGap(41, 41, 41)
+                .addComponent(lblFechaEntrega)
+                .addGap(47, 47, 47)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(45, 45, 45)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1007,14 +967,6 @@ public class FrameInternoAltaDemandaPatronal extends javax.swing.JInternalFrame 
     private javax.swing.JButton btnInsertarPrestacionesReclamar;
     private javax.swing.JButton btnInsertarRelacionPruebas;
     private javax.swing.JComboBox<String> comboAsigandoA;
-    private com.toedter.calendar.JDateChooser dateChooserAudienciaInicial;
-    private com.toedter.calendar.JDateChooser dateChooserFechaControlAdministrativo;
-    private com.toedter.calendar.JDateChooser dateChooserFechaControlDocumental;
-    private com.toedter.calendar.JDateChooser dateChooserFechaElaboracion;
-    private com.toedter.calendar.JDateChooser dateChooserFechaEntrega;
-    private com.toedter.calendar.JDateChooser dateChooserFechaIngreso;
-    private com.toedter.calendar.JDateChooser dateChooserFechaRecepcionGestion;
-    private com.toedter.calendar.JDateChooser dateChooserFechaRemision;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JList<String> jList1;
